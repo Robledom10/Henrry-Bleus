@@ -1,318 +1,387 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar {
-    background-color: #1E172F;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 0rem 2rem;
-    align-items: center;
+  background-color: #1e172f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem 2rem;
+  align-items: center; 
 }
 
 .navbar nav {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .navbar nav a {
-    color: #7C7785;
-    text-decoration: none;
+  color: #7c7785;
+  text-decoration: none;
 }
 
 .navbar nav .activa {
-    color: white;
+  color: white;
 }
 
 .btn.download {
-    background: linear-gradient(to right, #8640D5, #097CD5);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    color: white;
+  background: linear-gradient(to right, #8640d5, #097cd5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: white;
 }
 
 .hero {
-    position: relative;
-    display: flex;
-    background-color: #2E2550;
-    color: white;
-    max-height: 48rem;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: #2e2550;
+  color: white;
+  max-height: 48rem;
+  overflow: hidden;
 }
 
 .hero-text,
 .hero-image {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .hero .hero-text h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
+  font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 .hero .hero-text p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .hero .hero-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 500px;
-    margin-left: 250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
+  margin-left: 250px;
 }
 
 .hero .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 150px;
-    align-items: center;
-    padding-bottom: 4rem;
-    padding-top: 8rem;
-    background: url(../assets/images/hojasFondo.jpg) no-repeat center center/cover;
-}   
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 8rem;
+  background: url(../assets/images/hojasFondo.jpg) no-repeat center center/cover;
+}
 
 .hero .hero-image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(46, 37, 80, 0.6); /* Puedes ajustar opacidad o eliminar */
-    z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(46, 37, 80, 0.6);
+  z-index: 0;
 }
 
 .hero-image img {
-    max-height: 450px;
-    height: auto;
-    padding-top: 20px;
-    position: relative;
+  max-height: 450px;
+  height: auto;
+  padding-top: 20px;
+  position: relative;
 }
 
 .hero .buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2.5rem;
-    padding: 0.5rem;
-    border: 2px #7C7785 solid;
-    border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+  border: 2px #7c7785 solid;
+  border-radius: 5px;
 }
 
 .hero .buttons .btn {
-    padding: 0.7rem 1.5rem;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    background: white;
-    font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  background: white;
+  font-size: 1rem;
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #ff3ca4, #e60073);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: linear-gradient(to right, #ff3ca4, #e60073);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .buttons .btn.secondary {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 .features {
-    background-color: #f4f5fb;
-    padding: 4rem 2rem;
-    text-align: center;
+  background-color: #f4f5fb;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .features h2 {
-    color: #ec1470;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
+  color: #ec1470;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
 }
 
-/* Layout de dos columnas */
 .feature-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap; /* responsive por si es móvil */
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-/* Imagen (izquierda) */
 .feature-box img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
-/* Contenido textual (derecha) */
 .feature-text {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .feature-text h3 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  background: linear-gradient(to right, #c974a1, #e0569e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.feature-text h4 {
+  color: #ec1470;
 }
 
 .feature-text p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
-/* Lista con íconos rosas */
 .feature-text ul {
-    list-style: none;
-    padding: 0;
-    color: #333;
+  list-style: none;
+  padding: 0;
+  color: #333;
 }
 
 .feature-text ul li {
-    position: relative;
-    padding-left: 1.8rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .feature-text ul li::before {
-   content: "✔";
-    position: absolute;
-    left: 0;
-    top: 0.2rem; 
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #ec1470;
-    font-weight: bold;
-    border: 2px solid #e60073;
-    border-radius: 50%;
-    background-color: white;
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ec1470;
+  font-weight: bold;
+  border: 2px solid #e60073;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .feature-text h4:first-child::before {
-    content: "—";
-    font-size: 1.5rem;
-    color: #ec1470;
-    margin-right: 10px;
+  content: "—";
+  font-size: 1.5rem;
+  color: #ec1470;
+  margin-right: 10px;
 }
 
-
 .pricing {
-    padding: 4rem 2rem;
-    background-color: #1f103f;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 4rem 2rem;
+  background-color: #1f103f;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .card {
-    background-color: white;
-    color: #333;
-    border-radius: 8px;
-    padding: 2rem;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card h3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card .price {
-    font-size: 1.5rem;
-    margin: 1rem 0;
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 .card ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 .card ul li {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-size: 1rem;
+}
+
+/* Check ✅ */
+.card ul li.icon-check-active::before  {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #F41486;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Star ⭐ */
+.card ul li.icon-star-active::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #F41486;
+  font-size: 1rem;
+}
+
+/* X ❌ */
+.card ul li.icon-x-active::before {
+  content: "✘";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #5E5E5E;
+  font-size: 1rem;
+}
+
+.card ul li.icon-check::before  {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #2F2946;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Star ⭐ */
+.card ul li.icon-star::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #2F2946;
+  font-size: 1rem;
+}
+
+/* X ❌ */
+.card ul li.icon-x::before {
+  content: "✘";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: #5E5E5E;
+  font-size: 1rem;
 }
 
 .card .desc {
-    font-size: 0.9rem;
-    margin: 1rem 0;
-    text-align: center;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .btn.subscribe {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    text-decoration: none;
-    border-radius: 4px;
-    color: white;
-    margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 1rem;
 }
 
 .btn.subscribe.lite {
-    background-color: #ff3ca4;
+  background-color: #ff3ca4;
 }
 
 .btn.subscribe.standard,
 .btn.subscribe.ultimate {
-    background-color: #2d1b55;
+  background-color: #2d1b55;
 }
 
 footer {
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    margin-top: auto;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
 }
 
 footer .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 footer .socials a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
