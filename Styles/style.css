@@ -171,7 +171,7 @@ body {
 
 .feature-text h3 {
   font-size: 2rem;
-  background: linear-gradient(to right, #c974a1, #e0569e);
+  background: linear-gradient(to right, #C6548E, #C81973);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -206,28 +206,28 @@ body {
   position: absolute;
   left: 0;
   top: 0.2rem;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #ec1470;
   font-weight: bold;
-  border: 2px solid #e60073;
+  border: 1px solid #e60073;
   border-radius: 50%;
   background-color: white;
 }
 
 .feature-text h4:first-child::before {
   content: "—";
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #ec1470;
   margin-right: 10px;
 }
 
 .pricing {
   padding: 4rem 2rem;
-  background-color: #1f103f;
+  background-color: #1E172F;
   color: white;
   text-align: center;
   display: flex;
@@ -280,7 +280,6 @@ body {
   font-size: 1rem;
 }
 
-/* Check ✅ */
 .card ul li.icon-check-active::before  {
   content: "✔";
   position: absolute;
@@ -291,7 +290,6 @@ body {
   font-weight: bold;
 }
 
-/* Star ⭐ */
 .card ul li.icon-star-active::before {
   content: "★";
   position: absolute;
@@ -301,13 +299,12 @@ body {
   font-size: 1rem;
 }
 
-/* X ❌ */
 .card ul li.icon-x-active::before {
   content: "✘";
   position: absolute;
   left: 0;
   top: 0.2rem;
-  color: #5E5E5E;
+  color: #3F3F3F;
   font-size: 1rem;
 }
 
@@ -321,7 +318,6 @@ body {
   font-weight: bold;
 }
 
-/* Star ⭐ */
 .card ul li.icon-star::before {
   content: "★";
   position: absolute;
@@ -331,7 +327,6 @@ body {
   font-size: 1rem;
 }
 
-/* X ❌ */
 .card ul li.icon-x::before {
   content: "✘";
   position: absolute;
@@ -357,12 +352,12 @@ body {
 }
 
 .btn.subscribe.lite {
-  background-color: #ff3ca4;
+  background: linear-gradient(to right, #EB67AB, #F41587);
 }
 
 .btn.subscribe.standard,
 .btn.subscribe.ultimate {
-  background-color: #2d1b55;
+  background-color: #2E2550;
 }
 
 footer {
